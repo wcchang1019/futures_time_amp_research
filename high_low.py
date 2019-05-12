@@ -10,12 +10,6 @@ sns.set_style("whitegrid", {"font.sans-serif": ['Microsoft JhengHei']})
 
 
 def big_small_compare(big_type, small_type):
-    ''''
-        在大週期上漲或下跌的條件下，畫出小週期的時間與震幅關係圖
-        :param big_type:1:上漲 -1:下跌 0:盤整
-        :param small_type:1:上漲 -1:下跌 0:盤整
-        :return:
-    '''
     df = pd.read_csv('data\high_low_3.csv')
     df2 = pd.read_csv('data\high_low_10.csv')
     df = df.astype(float)
